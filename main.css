@@ -9,7 +9,7 @@ box-sizing: border-box;
 }
 
 .bg-light {
-    background-color: #c90506 !important;
+    background-color: #fbfbfb !important;
     font-family: 'Barriecito', cursive;
     font-family: 'Sedgwick Ave Display', cursive;;
 }
@@ -118,7 +118,7 @@ h2,p,button{
   }
 
   #navbarNav .navbar-nav a{
-    color: white;
+    color: rgb(17, 15, 15);
   }
 
   #contato input{
