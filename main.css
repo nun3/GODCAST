@@ -106,8 +106,9 @@ h2,p,button{
     color: white;
     border: none;
     cursor: pointer;
-    margin-left: 79%;
+    margin-left: 82%;
     border-radius: 10px;
+    width: 20%;
   }
 
   /* Estilos CSS para os links das redes sociais */
