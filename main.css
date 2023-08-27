@@ -1,0 +1,194 @@
+#{
+ margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.navbar-brand img {
+    height: 34px;
+}
+
+.bg-light {
+    background-color: #c90506 !important;
+    font-family: 'Barriecito', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;;
+}
+
+.ml-auto img{
+width: 20px;
+}
+
+.img-fluid{
+  width: 80%;
+}
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;/
+}
+
+.ml-auto{
+  list-style: none;
+}
+
+.fa-github:before {
+  content: none;
+}
+
+.fa-linkedin:before {
+  content: none;
+}
+
+button:hover {
+  background-color: #c90506;
+}
+
+
+.fa-instagram:before {
+  content: none;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.col-md-6{
+    flex-basis: 50%;
+    padding: 80px 2px;
+    text-align: justify;
+}
+
+
+h2,p,button{
+  color: black;
+  font-family: 'Barriecito', cursive;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.col-md-6 p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.container {
+    display: flex;
+  }
+
+.form-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .social-container {
+    flex: 1;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #181b1a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 79%;
+    border-radius: 10px;
+  }
+
+  /* Estilos CSS para os links das redes sociais */
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #navbarNav .navbar-nav a{
+    color: white;
+  }
+
+  #contato input{
+    border-bottom-color: gray ;
+    border-bottom-style:solid ;
+    border-bottom-width: 2px ;
+  }
+
+  .container , .social-container h2,
+  .social-links{
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center
+  }
+
+  .footer-left{
+    text-align: left;
+    margin: 20px;
+  }
+
+  .social-links img{
+    height: 100px;
+  }
+
+  .social-links{
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    background-color: #1c1d1d;
+    border-radius: 32px;
+    margin-top: 5%;
+  }
+
+  #redes p{
+    color: #f1eeee;
+  }
+
+  .podcast-section h2,button{
+    color: #f1eeee;
+  }
+
+  #venha-ate-nos {
+    background-color: #f1eeee;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #venha-ate-nos h2{
+    color: #333;
+    margin-left: 42%;
+  }
+  
+  #venha-ate-nos p {
+    color: #666;
+    margin-left: 20%;
+  }
+  
+  #venha-ate-nos ul{
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex;
+    margin-left: 20%;
+  }
+  
+  #venha-ate-nos li {
+    margin-bottom: 10px;
+    margin: 10px;
+  }
+  
+  #venha-ate-nos li strong {
+    font-weight: bold;
+  }
+
+  
