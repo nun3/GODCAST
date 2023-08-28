@@ -4,18 +4,16 @@ padding: 0;
 box-sizing: border-box;
 }
 
-.navbar-brand img {
-    height: 34px;
-}
 
 .bg-light {
     background-color: #fbfbfb !important;
     font-family: 'Barriecito', cursive;
-    font-family: 'Sedgwick Ave Display', cursive;;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 
 .ml-auto img{
 width: 20px;
+
 }
 
 .img-fluid{
@@ -24,7 +22,8 @@ width: 20px;
 .container {
     max-width: 1280px;
     width: 100%;
-    margin: 0 auto;/
+    margin: 0 auto;
+ 
 }
 
 .ml-auto{
@@ -96,8 +95,9 @@ h2,p,button{
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
-    border: none;
-    outline: none;
+    /*border: none;
+    outline: none;*/
+    border-radius: 10px;
   }
 
   button {
@@ -117,9 +117,6 @@ h2,p,button{
     justify-content: space-between;
   }
 
-  #navbarNav .navbar-nav a{
-    color: rgb(17, 15, 15);
-  }
 
   #contato input{
     border-bottom-color: gray ;
@@ -137,7 +134,13 @@ h2,p,button{
   .footer-left{
     text-align: left;
     margin: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+
   }
+
 
   .social-links img{
     height: 100px;
@@ -152,44 +155,136 @@ h2,p,button{
     margin-top: 5%;
   }
 
-  #redes p{
-    color: #f1eeee;
-  }
 
   .podcast-section h2,button{
     color: #f1eeee;
   }
 
-  #venha-ate-nos {
-    background-color: #f1eeee;
-    padding: 20px;
-    border-radius: 5px;
+  .menu .menu-lines{
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
   }
-  
-  #venha-ate-nos h2{
-    color: #333;
-    margin-left: 42%;
-  }
-  
-  #venha-ate-nos p {
-    color: #666;
-    margin-left: 20%;
-  }
-  
-  #venha-ate-nos ul{
-    list-style-type: none;
-    padding: 0;
-    display: inline-flex;
-    margin-left: 20%;
-  }
-  
-  #venha-ate-nos li {
-    margin-bottom: 10px;
-    margin: 10px;
-  }
-  
-  #venha-ate-nos li strong {
-    font-weight: bold;
+  .menu .menu-lines span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px ;
+    background-color: #0a0a0a;
+    border-radius: 3px;
+    transition: all ease .2s;
   }
 
+  .menu .menu-faketrigger{
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+
+
+.menu .menu-faketrigger:checked ~ .menu-lines span{
+  background-color: #eae6e6f9;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(1){
+transform-origin: 0% 0%;
+transform: rotate(45deg) scaleX(1.25);
+}
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(2){
+opacity: 0;
+}
+.menu .menu-faketrigger:checked ~ .menu-lines span:nth-child(3){
+  transform-origin: 0% 100%;
+  transform: rotate(-45deg) scaleX(1.25);
+}
+
+.menu ul li{
+  padding: 10px 30px;
+  list-style-type: none;
+
+}
+
+.menu{
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #f1eeee;
+  transition: all  .3s ;
+}
+
+.menu ul li a:hover{
+  color: rgba(173, 172, 171, 0.836);
+}
+
+.menu ul{
+  position: absolute;
+  z-index: 998;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6vh;
+  margin-top: -50px;
+  background-color: #1c1919;
+  transition: all ease .2s;
+}
+
+.menu .menu-faketrigger:checked ~ ul{
+margin-top: 0;
+height: 50px;
+}
+
+.redes-sociais {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.lista-redes {
+  list-style: none;
+  padding: 0px;
   
+}
+
+.lista-redes li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 35px;
+}
+
+.icone-facebook {
+  background: url('imagens/face.png') no-repeat;
+  background-size: 20px 20px;
+  padding-left: 25px;
+}
+
+.icone-instagram {
+  background: url('imagens/Insta.png') no-repeat;
+  background-size: 20px 20px;
+  padding-left: 25px;
+}
+
+.icone-twitter {
+  background: url('imagens/X-Novo-twitter-Credito_Reproducao.jpg') no-repeat;
+  background-size: 20px 20px;
+  padding-left: 25px;
+}
+
+.icone-linkedin {
+  background: url('imagens/linkedin.png') no-repeat;
+  background-size: 20px 20px;
+  padding-left: 25px;
+}
+.icone-git {
+  background: url('imagens/git.png') no-repeat;
+  background-size: 20px 20px;
+  padding-left: 25px;
+}
+
+
